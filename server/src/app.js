@@ -6,7 +6,7 @@ import { loggerMiddleware } from "./middlewares/loggerMiddleware.js"
 import { errMiddleware } from "./middlewares/errMiddleware.js"
 
 const expectedCors = {
-    origin : "http://localhost:5173" || "https://notely-1-96gg.onrender.com",
+    origin : "https://notely-1-96gg.onrender.com",
     methods : ["GET" ,"POST" , "PUT" ,"PATCH", "DELETE"],
     allowedHeaders : ['Content-Type','Authorization'],
     credentials :true
