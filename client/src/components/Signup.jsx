@@ -55,7 +55,7 @@ const Signup = () => {
     try {
       setLoading(true);
 
-      const res = await fetch("http://localhost:3000/auth/signup", {
+      const res = await fetch("https://notely-1-96gg.onrender.com/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -64,7 +64,6 @@ const Signup = () => {
       });
 
       const data = await res.json();
-      console.log(data)
       if (!res.ok) {
         throw new Error(data.message || "Signup failed");
       }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const API_URL = "http://localhost:3000/notes";
+const API_URL = "https://notely-1-96gg.onrender.com/notes";
 
 const Home = () => {
   const [notes, setNotes] = useState([]);
@@ -16,7 +16,7 @@ const Home = () => {
     try {
       setLoading(true);
 
-      const res = await fetch("http://localhost:3000/notes", {
+      const res = await fetch(API_URL, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
