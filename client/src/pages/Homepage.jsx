@@ -131,7 +131,7 @@ const Home = () => {
             {editingId ? "Update Note" : "Add Note"}
           </button>
         </form>
-        <h1 className="text-3xl font-bold text-gray-900 mt-4">Your Notes</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mt-4 p-3">Your Notes</h1>
         <div className="mt-8">
           {loading ? (
             <LoaderComponent count={4} />
