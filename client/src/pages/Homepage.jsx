@@ -136,7 +136,7 @@ const Home = () => {
           {loading ? (
             <LoaderComponent count={4} />
           ) : notes.length === 0 ? (
-            <p>No notes yet</p>
+            <p className="p-3">No notes yet</p>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {notes.map((note) => (
