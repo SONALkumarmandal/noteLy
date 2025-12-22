@@ -5,11 +5,11 @@ const About = () => {
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-5xl mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold text-gray-900">
-          About NotesApp
+          About NoteLY
         </h1>
 
         <p className="text-gray-600 mt-4 leading-relaxed">
-          NotesApp is a simple, secure, and fast note-taking application designed
+          NoteLY is a simple, secure, and fast note-taking application designed
           to help you organize your thoughts, tasks, and ideas in one place.
           Whether you are a student, developer, or professional, NotesApp keeps
           your notes accessible anytime, anywhere.

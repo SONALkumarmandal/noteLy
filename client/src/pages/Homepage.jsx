@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import LoaderComponent from "../components/LoaderComponent";
 const API_URL = "https://notely-1-96gg.onrender.com/notes";
 
 const Home = () => {
@@ -114,14 +114,14 @@ const Home = () => {
           onSubmit={handleSubmit}
           className="mt-8 bg-white p-6 rounded-xl shadow"
         >
-          <input
+          <input maxLength={50}
             className="w-full mb-3 p-2 border rounded"
             placeholder="Title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
 
-          <textarea
+          <textarea maxLength={200}
             className="w-full mb-3 p-2 border rounded"
             placeholder="Content"
             value={content}
@@ -135,7 +135,7 @@ const Home = () => {
 
         <div className="mt-8">
           {loading ? (
-            <p>Loading...</p>
+            <LoaderComponent count={4} />
           ) : notes.length === 0 ? (
             <p>No notes yet</p>
           ) : (

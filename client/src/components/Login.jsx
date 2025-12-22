@@ -45,7 +45,7 @@ const Login = () => {
 
   try {
     setLoading(true);
-
+    
     const res = await fetch("https://notely-1-96gg.onrender.com/auth/login", {
       method: "POST",
       headers: {
