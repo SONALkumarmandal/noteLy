@@ -8,6 +8,13 @@ const Login = () => {
     email: "",
     password: ""
   });
+  
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      navigate("/home", { replace: true });
+    }
+  }, [navigate]);
 
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
